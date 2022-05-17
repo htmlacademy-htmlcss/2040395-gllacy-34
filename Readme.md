@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Ксения Крохалева](https://up.htmlacademy.ru/htmlcss/34/user/2040395).
-* Наставник: [Валентина Видяева] (https://htmlacademy.ru/profile/id189794).
+* Наставник: [Валентина Видяева](https://htmlacademy.ru/profile/id189794).
 
 ---
 
