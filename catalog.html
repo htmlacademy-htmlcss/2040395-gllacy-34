@@ -44,10 +44,33 @@
       </select>
 
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+
         <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Цена: 100 &#8381; - 500 &#8381;</legend>
-          <input type="range" min="100" max="500">
+          <legend class="catalog-filter-title">Цена:</legend>
+
+          <div class="range">
+            <div class="range-scale">
+              <div class="range-bar" style="left: 42px; width: 136px">
+                <button class="range-toggle toggle-min">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle toggle-max">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="range-wrapper-inputs">
+              <label class="catalog-filter-label">
+                Цена: <input class="range-input" type="number" value="100" name="min-price"> &#8381;
+              </label>
+              <label class="catalog-filter-label">
+                - <input class="range-input" type="number" value="500" name="max-price" style="width: 37px"> &#8381;
+              </label>
+            </div>
+          </div>
         </fieldset>
+
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Жирность:</legend>
           <ul class="catalog-filter-list">
@@ -214,9 +237,9 @@
   </main>
   <footer class="page-footer">
     <ul class="social footer-social">
-      <li class="social-item"><a href="social-link"><img src="#"></a></li>
-      <li class="social-item"><a href="social-link"><img src="#"></a></li>
-      <li class="social-item"><a href="social-link"><img src="#"></a></li>
+      <li class="social-item"><a href="social-link"><img src="https://t.me/htmlacademy"></a></li>
+      <li class="social-item"><a href="social-link"><img src="https://vk.com/htmlacademy"></a></li>
+      <li class="social-item"><a href="social-link"><img src="https://www.youtube.com/user/htmlacademyru"></a></li>
     </ul>
     <ul class="footer-navigation">
       <li class="footer-navigation-item"><a href="#" class="footer-navigation-link">Для поставщиков</a></li>
@@ -225,7 +248,7 @@
       <li class="footer-navigation-item"><a href="#" class="footer-navigation-link">Экологические стандарты</a></li>
     </ul>
     <copyright class="copyright">
-      <img src="#" class="copyright-logo">
+      <a href="https://htmlacademy.ru/" class="htmlacademy-logo"><img src="#" class="copyright-logo"></a>
       <p class="copyright-text">Сделано в <a href="https://htmlacademy.ru/" class="htmlacademy-link">.html academy</a> &copy; 2021</p>
     </copyright>
   </footer>
