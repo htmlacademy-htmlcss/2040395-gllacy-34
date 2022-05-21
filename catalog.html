@@ -46,7 +46,7 @@
       </select>
 
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-
+        <button class="catalog-button" type="button">Применить</button>
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Цена:</legend>
 
@@ -78,25 +78,25 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="shaving-supplies">
+                <input class="control-input" type="radio" name="fat" value="0%">
                 0%
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="care-products" checked>
+                <input class="control-input" type="radio" name="fat" value="to10%" checked>
                 до 10%
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="accessories">
+                <input class="control-input" type="radio" name="fat" value="to30%">
                 до 30%
               </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="accessories">
+                <input class="control-input" type="radio" name="fat" value="more30%">
                 выше 30%
               </label>
             </li>
@@ -139,8 +139,6 @@
           </ul>
         </fieldset>
 
-        <button class="catalog-button" type="submit">Применить</button>
-
       </form>
 
       <ul class="product-list">
@@ -149,28 +147,28 @@
           <h3 class="product-card-title">Малинка</h3>
           <p class="product-description">Сливочное мороженое с малиновым джемом</p>
           <b class="product-card-price">310 &#8381;/кг</b>
-          <button class="buy-button" type="submit"><span class="visually-hidden">В корзину</span></button>
+          <button class="buy-button" type="submit" name="raspberry"><span class="visually-hidden">В корзину</span></button>
         </li>
         <li class="product-card">
           <img class="product-card-image" src="#" alt="Мороженое фисташка">
           <h3 class="product-card-title">Фисташка</h3>
           <p class="product-description">Фисташковый пломбир с кусочками шоколада</p>
           <b class="product-card-price">340 &#8381;/кг</b>
-          <button class="buy-button" type="submit"><span class="visually-hidden">В корзину</span></button>
+          <button class="buy-button" type="submit" name="pistachio"><span class="visually-hidden">В корзину</span></button>
         </li>
         <li class="product-card">
           <img class="product-card-image" src="#" alt="Мороженое черника">
           <h3 class="product-card-title">Черника</h3>
           <p class="product-description">Крем-брюле с черничным джемом</p>
           <b class="product-card-price">330 &#8381;/кг</b>
-          <button class="buy-button" type="submit"><span class="visually-hidden">В корзину</span></button>
+          <button class="buy-button" type="submit" name="bilberry"><span class="visually-hidden">В корзину</span></button>
         </li>
         <li class="product-card">
           <img class="product-card-image" src="#" alt="Мороженое бабл-гам">
           <h3 class="product-card-title">Бабл-гам</h3>
           <p class="product-description">Ванильный пломбир со сладкой посыпкой</p>
           <b class="product-card-price">320 &#8381;/кг</b>
-          <button class="buy-button" type="submit"><span class="visually-hidden">В корзину</span></button>
+          <button class="buy-button" type="submit" name="bubble gum"><span class="visually-hidden">В корзину</span></button>
         </li>
 
         <li class="product-card">
@@ -178,28 +176,28 @@
           <h3 class="product-card-title">Ежевика</h3>
           <p class="product-description">Сливочное мороженое с ежевичным джемом</p>
           <b class="product-card-price">330 &#8381;/кг</b>
-          <button class="buy-button" type="submit"><span class="visually-hidden">В корзину</span></button>
+          <button class="buy-button" type="submit" name="blackberry"><span class="visually-hidden">В корзину</span></button>
         </li>
         <li class="product-card">
           <img class="product-card-image" src="#" alt="Мороженое банан">
           <h3 class="product-card-title">Банан</h3>
           <p class="product-description">Сливочный пломбир с банановым вкусом</p>
           <b class="product-card-price">340 &#8381;/кг</b>
-          <button class="buy-button" type="submit"><span class="visually-hidden">В корзину</span></button>
+          <button class="buy-button" type="submit" name="banana"><span class="visually-hidden">В корзину</span></button>
         </li>
         <li class="product-card">
           <img class="product-card-image" src="#" alt="Мороженое шоколадка">
           <h3 class="product-card-title">Шоколадка</h3>
           <p class="product-description">Классический шоколадный пломбир</p>
           <b class="product-card-price">270 &#8381;/кг</b>
-          <button class="buy-button" type="submit"><span class="visually-hidden">В корзину</span></button>
+          <button class="buy-button" type="submit" name="chocolate"><span class="visually-hidden">В корзину</span></button>
         </li>
         <li class="product-card">
           <img class="product-card-image" src="#" alt="Мороженое клубничка">
           <h3 class="product-card-title">Клубничка</h3>
           <p class="product-description">Сливочный пломбир с клубничным вкусом</p>
           <b class="product-card-price">300 &#8381;/кг</b>
-          <button class="buy-button" type="submit"><span class="visually-hidden">В корзину</span></button>
+          <button class="buy-button" type="submit" name="strawberry"><span class="visually-hidden">В корзину</span></button>
         </li>
 
         <li class="product-card">
@@ -207,28 +205,28 @@
           <h3 class="product-card-title">Лимон</h3>
           <p class="product-description">Освежающий лимонный сорбет</p>
           <b class="product-card-price">310 &#8381;/кг</b>
-          <button class="buy-button" type="submit"><span class="visually-hidden">В корзину</span></button>
+          <button class="buy-button" type="submit" name="lemon"><span class="visually-hidden">В корзину</span></button>
         </li>
         <li class="product-card">
           <img class="product-card-image" src="#" alt="Мороженое ментол">
           <h3 class="product-card-title">Ментол</h3>
           <p class="product-description">Сливочный пломбир с ментоловым сиропом</p>
           <b class="product-card-price">320 &#8381;/кг</b>
-          <button class="buy-button" type="submit"><span class="visually-hidden">В корзину</span></button>
+          <button class="buy-button" type="submit" name="menthe"><span class="visually-hidden">В корзину</span></button>
         </li>
         <li class="product-card">
           <img class="product-card-image" src="#" alt="Мороженое орешек">
           <h3 class="product-card-title">Орешек</h3>
           <p class="product-description">Фисташковый пломбир с шоколадным сиропом</p>
           <b class="product-card-price">360 &#8381;/кг</b>
-          <button class="buy-button" type="submit"><span class="visually-hidden">В корзину</span></button>
+          <button class="buy-button" type="submit" name="nut"><span class="visually-hidden">В корзину</span></button>
         </li>
         <li class="product-card">
           <img class="product-card-image" src="#" alt="Мороженое крем-брюле">
           <h3 class="product-card-title">Крем-брюле</h3>
           <p class="product-description">Классическое крем-брюле</p>
           <b class="product-card-price">280 &#8381;/кг</b>
-          <button class="buy-button" type="submit"><span class="visually-hidden">В корзину</span></button>
+          <button class="buy-button" type="submit" name="creme brulee"><span class="visually-hidden">В корзину</span></button>
         </li>
       </ul>
       <button class="more-button">Показать еще</button>
