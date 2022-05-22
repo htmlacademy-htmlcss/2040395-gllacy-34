@@ -8,8 +8,10 @@
 
 <body>
   <header class="page-header">
-    <img src="#" class="header-logo" alt="Логотип магазина Глэйси">
     <nav class="navigation">
+    <a href="index.html" class="navigation-logo">
+      <img src="#" class="header-logo" alt="Логотип магазина Глэйси">
+      </a>
       <ul class="navigation-list">
         <li class="navigation-item"><a href="catalog.html" class="navigation-link navigation-link-current">Каталог</a></li>
         <li class="navigation-item"><a href="#" class="navigation-link">Доставка и оплата</a></li>
@@ -32,7 +34,7 @@
           <a class="breadcrumbs-link" href="index.html">Главная</a>
         </li>
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link">Каталог</a>
+          <span class="breadcrumbs-current">Каталог</span>
         </li>
       </ul>
     </header>
@@ -40,13 +42,14 @@
     <section class="catalog-products">
       <h2 class="visually-hidden">Список товаров с фильтрами</h2>
 
-      <label for="select">Сортировка:</label><br>
-      <select class="select-control" id="select">
-        <option value="popular">по популярности</option>
-      </select>
+
 
       <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-        <button class="catalog-button" type="button">Применить</button>
+        <label for="select">Сортировка:</label><br>
+        <select class="select-control" id="select">
+          <option value="popular">по популярности</option>
+        </select>
+
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Цена:</legend>
 
@@ -75,73 +78,52 @@
 
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Жирность:</legend>
-          <ul class="catalog-filter-list">
-            <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="radio" name="fat" value="0%">
                 0%
               </label>
-            </li>
-            <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="radio" name="fat" value="to10%" checked>
                 до 10%
               </label>
-            </li>
-            <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="radio" name="fat" value="to30%">
                 до 30%
               </label>
-            </li>
-            <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="radio" name="fat" value="more30%">
                 выше 30%
               </label>
-            </li>
-          </ul>
         </fieldset>
 
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Наполнители:</legend>
-          <ul class="catalog-filter-list">
-            <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="checkbox" name="chocolate" checked>
                 шоколадные
               </label>
-            </li>
-            <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="checkbox" name="sugar-topping" checked>
                 сахарные посыпки
               </label>
-            </li>
-            <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="checkbox" name="fruits">
                 фрукты
               </label>
-            </li>
-            <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="checkbox" name="syrop">
                 сиропы
               </label>
-            </li>
-            <li class="catalog-filter-item">
               <label class="control">
                 <input class="control-input" type="checkbox" name="jam">
                 джемы
               </label>
-            </li>
-          </ul>
         </fieldset>
 
+        <button class="catalog-button" type="button">Применить</button>
       </form>
 
-      <ul class="product-list">
+      <ol class="product-list">
         <li class="product-card">
           <img class="product-card-image" src="#" alt="Мороженое малинка">
           <h3 class="product-card-title">Малинка</h3>
@@ -228,7 +210,7 @@
           <b class="product-card-price">280 &#8381;/кг</b>
           <button class="buy-button" type="submit" name="creme brulee"><span class="visually-hidden">В корзину</span></button>
         </li>
-      </ul>
+      </ol>
       <button class="more-button">Показать еще</button>
 
       <ul class="pagination">
@@ -243,9 +225,9 @@
 
   <footer class="page-footer">
     <ul class="social footer-social">
-      <li class="social-item"><a href="social-link"><img src="https://t.me/htmlacademy" alt="Логотип Телеграм"></a></li>
-      <li class="social-item"><a href="social-link"><img src="https://vk.com/htmlacademy" alt="Логотип Вконтакте"></a></li>
-      <li class="social-item"><a href="social-link"><img src="https://www.youtube.com/user/htmlacademyru" alt="Логотип Ютьюб"></a></li>
+      <li class="social-item"><a href="https://t.me/htmlacademy" class="social-link" target="_blank"><img src="#" alt="Логотип Телеграм"></a></li>
+      <li class="social-item"><a href="https://vk.com/htmlacademy" class="social-link" target="_blank"><img src="#" alt="Логотип Вконтакте"></a></li>
+      <li class="social-item"><a href="https://www.youtube.com/user/htmlacademyru" class="social-link" target="_blank"><img src="#" alt="Логотип Ютьюб"></a></li>
     </ul>
     <ul class="footer-navigation">
       <li class="footer-navigation-item"><a href="#" class="footer-navigation-link">Для поставщиков</a></li>
@@ -254,8 +236,8 @@
       <li class="footer-navigation-item"><a href="#" class="footer-navigation-link">Экологические стандарты</a></li>
     </ul>
     <div class="copyright">
-      <a href="https://htmlacademy.ru/" class="htmlacademy-logo"><img src="#" class="copyright-logo" alt="Логотип HTML Academy"></a>
-      <p class="copyright-text">Сделано в <a href="https://htmlacademy.ru/" class="htmlacademy-link">.html academy</a> &copy; 2021</p>
+      <a href="https://htmlacademy.ru/" class="htmlacademy-logo" target="_blank"><img src="#" class="copyright-logo" alt="Логотип HTML Academy"></a>
+      <p class="copyright-text">Сделано в <a href="https://htmlacademy.ru/" class="htmlacademy-link" target="_blank">.html academy</a> &copy; 2021</p>
     </div>
   </footer>
 </body>
