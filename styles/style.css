@@ -42,7 +42,7 @@ body {
   text-align: center;
 }
 
-.navigation-user .navigation-item {
+.navigation-user .navigation-item:not(:first-child) {
   background-color: #FFCBD8;
 }
 .contacts-phone {
@@ -143,6 +143,8 @@ body {
 .advantages {
   background-image: url("../images/cone.png");
   background-repeat: no-repeat;
+  width: 1170px;
+  height: 480px;
 }
 
 .advantages-title {
@@ -167,6 +169,8 @@ body {
 .blog {
   background-image: url("../images/blog.jpg");
   background-repeat: no-repeat;
+  width: 570px;
+  height: 224px;
 }
 
 .blog-title {
@@ -184,6 +188,8 @@ body {
 .newsletter {
   background-image: url("../images/subscription.png");
   background-repeat: no-repeat;
+  width: 1170px;
+  height: 534px;
 }
 
 .newsletter-wrapper {
@@ -212,6 +218,8 @@ body {
 .delivery {
   background-image: url("../images/delivery.jpg");
   background-repeat: no-repeat;
+  width: 1170px;
+  height: 534px;
 }
 
 .delivery-title {
@@ -252,6 +260,8 @@ body {
 .contacts {
   background-image: url("../images/contact.jpg");
   background-repeat: no-repeat;
+  width: 1170px;
+  height: 492px;
 }
 
 .contacts-wrapper {
