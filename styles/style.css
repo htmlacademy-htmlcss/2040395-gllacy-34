@@ -1,0 +1,347 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+  background-color: #FEAFC3;
+}
+
+.page-wrapper {
+  flex-grow: 1;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-link {
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation-user .navigation-item:not(:first-child) {
+  background-color: #FFCBD8;
+}
+.contacts-phone {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.slide-title {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.slide-subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.social {
+  list-style-type: none;
+}
+
+.slides-slides {
+  list-style-type: none;
+}
+
+.section-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+  text-align: center;
+}
+.events-list {
+  list-style-type: none;
+}
+
+.event-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.events-item {
+  background-color: #FF7799;
+}
+
+.button {
+  background-color: #FCFCFC;
+  text-decoration: none;
+  color: #2D3440;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+
+}
+
+.tastes-list {
+  list-style-type: none;
+}
+
+.product-card {
+  background: #FCFCFC;
+}
+
+.product-card-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.product-description {
+  text-align: center;
+  color: #565C66;
+}
+
+.product-card-price {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.advantages {
+  background-image: url("../images/cone.png");
+  background-repeat: no-repeat;
+  width: 1170px;
+  height: 480px;
+}
+
+.advantages-wrapper {
+  background-color: #FCFCFC;
+}
+
+.advantages-list {
+  list-style-type: none;
+}
+
+.advantages-description {
+  color: #565C66;
+}
+
+.blog {
+  background-image: url("../images/blog.jpg");
+  background-repeat: no-repeat;
+  width: 570px;
+  height: 224px;
+}
+
+.blog-title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.blog-subtitle {
+  font-size: 16px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.newsletter {
+  background-image: url("../images/subscription.png");
+  background-repeat: no-repeat;
+  width: 570px;
+  height: 224px;
+}
+
+.newsletter-wrapper {
+  background-color: #FCFCFC;
+}
+
+.newsletter-description {
+  color: #565C66;
+}
+
+.newsletter-button {
+  color: #FCFCFC;
+  background-color: #FF2F64;
+}
+
+.contact-button {
+  color: #FCFCFC;
+  background-color: #FF2F64;
+}
+
+.delivery-button {
+  color: #FCFCFC;
+  background-color: #FF2F64;
+}
+
+.delivery {
+  background-image: url("../images/delivery.jpg");
+  background-repeat: no-repeat;
+  width: 1170px;
+  height: 534px;
+}
+
+.delivery-subtitle {
+  color: #565C66;
+}
+
+.order-delivery {
+  background-color: #FCFCFC;
+}
+
+.order-delivery-text {
+  color: #565C66;
+}
+
+.delivery-date {
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.delivery-phone {
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.delivery-address {
+  line-height: 20px;
+  font-weight: 700;
+  color: #565C66;
+}
+
+.contacts {
+  background-image: url("../images/contact.jpg");
+  background-repeat: no-repeat;
+  width: 1170px;
+  height: 492px;
+}
+
+.contacts-wrapper {
+  background-color: #FCFCFC;
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-address-text {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color:#2D3440;
+}
+
+.contacts-phone {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color:#2D3440;
+}
+
+.footer-social {
+  list-style-type: none;
+}
+
+.footer-navigation {
+  list-style-type: none;
+}
+
+.footer-navigation-link {
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.copyright-text {
+  font-size: 12px;
+  line-height: 16px;
+  color: #2D3440;
+}
+
+.product-list {
+  list-style-type: none;
+}
+
+.navigation-link-current {
+  color: #FCFCFC;
+  background-color: #FF2F64;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.breadcrumbs-current {
+  text-decoration: underline;
+}
+
+.inner-header-title {
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.catalog-filter {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.catalog-button {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  background-color: #FFCBD8;
+}
+
+.pagination {
+  list-style-type: none;
+}
+
+.pagination-link {
+  text-decoration: none;
+  color: #2D3440;
+}
+
+.footer-navigation li:first-child {
+  font-weight: 700;
+}

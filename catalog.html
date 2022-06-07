@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Сливочное мороженое</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
         <li class="navigation-item"><a href="#" class="navigation-link">О компании</a></li>
       </ul>
       <ul class="navigation-list navigation-user">
-        <li class="navigation-item"><a href="tel:+78005558628">+7 800 555-86-28</a></li>
+        <li class="navigation-item"><a href="tel:+78005558628" class="navigation-link contacts-phone">+7 800 555-86-28</a></li>
         <li class="navigation-item"><a href="#" class="navigation-link"><span class="visually-hidden">Поиск</span></a>
         </li>
         <li class="navigation-item"><a href="#" class="navigation-link">Вход</a></li>
@@ -65,10 +66,10 @@
 
           <div class="range-wrapper-inputs">
             <label class="catalog-filter-label">
-              Цена: <input class="range-input" type="number" value="100" name="min-price"> &#8381;
+              Цена: <input class="range-input" type="number" value="100" name="min-price"> ₽
             </label>
             <label class="catalog-filter-label">
-              - <input class="range-input" type="number" value="500" name="max-price" style="width: 37px"> &#8381;
+              - <input class="range-input" type="number" value="500" name="max-price" style="width: 37px"> ₽
             </label>
           </div>
         </div>
@@ -124,105 +125,105 @@
 
     <ol class="product-list">
       <li class="product-card">
-        <img class="product-card-image" src="images/raspberry.png" width="168" height="168" alt="Малиновое мороженое">
+        <img class="product-card-image" src="images/raspberry.jpg" width="168" height="168" alt="Малиновое мороженое">
         <h3 class="product-card-title">Малинка</h3>
         <p class="product-description">Сливочное мороженое с малиновым джемом</p>
-        <b class="product-card-price">310 &#8381;/кг</b>
+        <b class="product-card-price">310 ₽/кг</b>
         <button class="buy-button" type="submit" name="raspberry"><span class="visually-hidden">В
             корзину</span></button>
       </li>
       <li class="product-card">
-        <img class="product-card-image" src="images/pistachio.png" width="168" height="168" alt="Фисташковое мороженое">
+        <img class="product-card-image" src="images/pistachio.jpg" width="168" height="168" alt="Фисташковое мороженое">
         <h3 class="product-card-title">Фисташка</h3>
         <p class="product-description">Фисташковый пломбир с кусочками шоколада</p>
-        <b class="product-card-price">340 &#8381;/кг</b>
+        <b class="product-card-price">340 ₽/кг</b>
         <button class="buy-button" type="submit" name="pistachio"><span class="visually-hidden">В
             корзину</span></button>
       </li>
       <li class="product-card">
-        <img class="product-card-image" src="images/bilberry.png" width="168" height="168" alt="Черничное мороженое">
+        <img class="product-card-image" src="images/bilberry.jpg" width="168" height="168" alt="Черничное мороженое">
         <h3 class="product-card-title">Черника</h3>
         <p class="product-description">Крем-брюле с черничным джемом</p>
-        <b class="product-card-price">330 &#8381;/кг</b>
+        <b class="product-card-price">330 ₽/кг</b>
         <button class="buy-button" type="submit" name="bilberry"><span class="visually-hidden">В корзину</span></button>
       </li>
       <li class="product-card">
-        <img class="product-card-image" src="images/bubblegum.png" width="168" height="168" alt="Мороженое с посыпкой">
+        <img class="product-card-image" src="images/bubblegum.jpg" width="168" height="168" alt="Мороженое с посыпкой">
         <h3 class="product-card-title">Бабл-гам</h3>
         <p class="product-description">Ванильный пломбир со сладкой посыпкой</p>
-        <b class="product-card-price">320 &#8381;/кг</b>
+        <b class="product-card-price">320 ₽/кг</b>
         <button class="buy-button" type="submit" name="bubblegum"><span class="visually-hidden">В
             корзину</span></button>
       </li>
 
       <li class="product-card">
-        <img class="product-card-image" src="images/blackberry.png" width="168" height="168" alt="Мороженое с ежевикой">
+        <img class="product-card-image" src="images/blackberry.jpg" width="168" height="168" alt="Мороженое с ежевикой">
         <h3 class="product-card-title">Ежевика</h3>
         <p class="product-description">Сливочное мороженое с ежевичным джемом</p>
-        <b class="product-card-price">330 &#8381;/кг</b>
+        <b class="product-card-price">330 ₽/кг</b>
         <button class="buy-button" type="submit" name="blackberry"><span class="visually-hidden">В
             корзину</span></button>
       </li>
       <li class="product-card">
-        <img class="product-card-image" src="images/banana.png" width="168" height="168" alt="Мороженое с бананом">
+        <img class="product-card-image" src="images/banana.jpg" width="168" height="168" alt="Мороженое с бананом">
         <h3 class="product-card-title">Банан</h3>
         <p class="product-description">Сливочный пломбир с банановым вкусом</p>
-        <b class="product-card-price">340 &#8381;/кг</b>
+        <b class="product-card-price">340 ₽/кг</b>
         <button class="buy-button" type="submit" name="banana"><span class="visually-hidden">В корзину</span></button>
       </li>
       <li class="product-card">
-        <img class="product-card-image" src="images/chocolate.png" width="168" height="168" alt="Мороженое с шоколадом">
+        <img class="product-card-image" src="images/chocolate.jpg" width="168" height="168" alt="Мороженое с шоколадом">
         <h3 class="product-card-title">Шоколадка</h3>
         <p class="product-description">Классический шоколадный пломбир</p>
-        <b class="product-card-price">270 &#8381;/кг</b>
+        <b class="product-card-price">270 ₽/кг</b>
         <button class="buy-button" type="submit" name="chocolate"><span class="visually-hidden">В
             корзину</span></button>
       </li>
       <li class="product-card">
-        <img class="product-card-image" src="images/strawberry.png" width="168" height="168" alt="Клубничное мороженое">
+        <img class="product-card-image" src="images/strawberry.jpg" width="168" height="168" alt="Клубничное мороженое">
         <h3 class="product-card-title">Клубничка</h3>
         <p class="product-description">Сливочный пломбир с клубничным вкусом</p>
-        <b class="product-card-price">300 &#8381;/кг</b>
+        <b class="product-card-price">300 ₽/кг</b>
         <button class="buy-button" type="submit" name="strawberry"><span class="visually-hidden">В
             корзину</span></button>
       </li>
 
       <li class="product-card">
-        <img class="product-card-image" src="images/lemon.png" width="168" height="168" alt="Лимонное мороженое">
+        <img class="product-card-image" src="images/lemon.jpg" width="168" height="168" alt="Лимонное мороженое">
         <h3 class="product-card-title">Лимон</h3>
         <p class="product-description">Освежающий лимонный сорбет</p>
-        <b class="product-card-price">310 &#8381;/кг</b>
+        <b class="product-card-price">310 ₽/кг</b>
         <button class="buy-button" type="submit" name="lemon"><span class="visually-hidden">В корзину</span></button>
       </li>
       <li class="product-card">
-        <img class="product-card-image" src="images/menthe.png" width="168" height="168" alt="Мороженое с ментоловым сиропом">
+        <img class="product-card-image" src="images/menthe.jpg" width="168" height="168" alt="Мороженое с ментоловым сиропом">
         <h3 class="product-card-title">Ментол</h3>
         <p class="product-description">Сливочный пломбир с ментоловым сиропом</p>
-        <b class="product-card-price">320 &#8381;/кг</b>
+        <b class="product-card-price">320 ₽/кг</b>
         <button class="buy-button" type="submit" name="menthe"><span class="visually-hidden">В корзину</span></button>
       </li>
       <li class="product-card">
-        <img class="product-card-image" src="images/nut.png" width="168" height="168" alt="Мороженое с орехами и сиропом">
+        <img class="product-card-image" src="images/nut.jpg" width="168" height="168" alt="Мороженое с орехами и сиропом">
         <h3 class="product-card-title">Орешек</h3>
         <p class="product-description">Фисташковый пломбир с шоколадным сиропом</p>
-        <b class="product-card-price">360 &#8381;/кг</b>
+        <b class="product-card-price">360 ₽/кг</b>
         <button class="buy-button" type="submit" name="nut"><span class="visually-hidden">В корзину</span></button>
       </li>
       <li class="product-card">
-        <img class="product-card-image" src="images/cremebrulee.png" width="168" height="168" alt="Мороженое крем-брюле">
+        <img class="product-card-image" src="images/cremebrulee.jpg" width="168" height="168" alt="Мороженое крем-брюле">
         <h3 class="product-card-title">Крем-брюле</h3>
         <p class="product-description">Классическое крем-брюле</p>
-        <b class="product-card-price">280 &#8381;/кг</b>
+        <b class="product-card-price">280 ₽/кг</b>
         <button class="buy-button" type="submit" name="cremebrulee"><span class="visually-hidden">В
             корзину</span></button>
       </li>
     </ol>
-    <button class="more-button">Показать еще</button>
+    <button class="button more-button">Показать еще</button>
 
     <ul class="pagination">
       <li class="pagination-item"><a href="#" class="pagination-link">1</a></li>
       <li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
-      <li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+      <li class="pagination-item"><a href="#" class="pagination-link pagination-link-current">3</a></li>
       <li class="pagination-item"><a href="#" class="pagination-link">4</a></li>
       <li class="pagination-item"><a href="#" class="pagination-link">5</a></li>
     </ul>
