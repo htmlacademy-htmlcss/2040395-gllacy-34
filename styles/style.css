@@ -27,9 +27,6 @@ html {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -39,6 +36,9 @@ body {
 }
 
 .page-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   width: 1170px;
   margin: 0 auto;
 }
@@ -53,7 +53,6 @@ body {
 
 .navigation {
   display: flex;
-  width: 1170px;
   margin: 0 auto;
 }
 
@@ -130,13 +129,25 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
 }
 
 .events-item {
-  background-color: #FF7799;
-  width: 570px;
+  background: #FF7799 no-repeat right bottom;
+  width: 550px;
   border-radius: 16px;
+  margin-right: 30px;
+  padding: 36px;
+}
+
+.events-item:first-child {
+  background-image: url("../images/raspberry-cone.png");
+  background-size: contain;
+}
+
+.events-item:last-child {
+  background-image: url("/images/marshmallow-cone.png");
+  margin-right: 0;
+  background-size: contain;
 }
 
 .event-title {
@@ -145,11 +156,14 @@ body {
   font-weight: 700;
   margin: 0;
   padding: 0;
+  margin-bottom: 28px;
 }
 
 .event-subtitle {
   margin: 0;
   padding: 0;
+  margin-bottom: 28px;
+  max-width: 328px;
 }
 
 .visually-hidden {
@@ -245,6 +259,10 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 505px);
+  column-gap: 32px;
+  row-gap: 40px;
 }
 
 .advantages-description {
@@ -255,8 +273,6 @@ body {
 
 .index-columns {
   display: flex;
-  justify-content: space-between;
-  width: 1170px;
 }
 
 .blog {
@@ -268,6 +284,7 @@ body {
   padding-left: 32px;
   padding-top: 32px;
   margin-right: 30px;
+  flex-shrink: 0;
 }
 
 .glacy-blog {
@@ -299,18 +316,20 @@ body {
   background-size: cover;
   width: 570px;
   border-radius: 16px;
-  padding: 8px;
+  padding: 6px;
+  flex-shrink: 0;
 }
 
 .newsletter-wrapper {
   background-color: #FCFCFC;
   border-radius: 16px;
-  padding: 26px 26px 28px 26px;
+  padding: 26px;
 }
 
 .newsletter-description {
   color: #565C66;
   margin: 0;
+  margin-bottom: 42px;
 }
 
 .newsletter-button {
@@ -331,18 +350,36 @@ body {
 .delivery {
   background-image: url("../images/delivery.jpg");
   background-repeat: no-repeat;
-  width: 1170px;
-  height: 534px;
+  background-size: cover;
   border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 64px 64px 100px;
+}
+
+.delivery .section-title {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .delivery-subtitle {
   color: #565C66;
+  margin: 0;
+  width: 371px;
+}
+
+.delivery-text {
+  margin-right: 135px;
+  align-self: center;
 }
 
 .order-delivery {
   background-color: #FCFCFC;
   border-radius: 8px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .order-delivery-text {
@@ -365,13 +402,16 @@ body {
   color: #565C66;
 }
 
+.delivery-button {
+  margin: 0 auto;
+}
+
 .contacts {
   background-image: url("../images/contact.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1170px;
-  height: 492px;
   border-radius: 16px;
+  padding: 64px;
 }
 
 .contacts-wrapper {
@@ -383,8 +423,21 @@ body {
   padding: 40px;
 }
 
+.contacts-title {
+  color: #565C66;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.contacts-subtitle {
+  color: #565C66;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
 .contacts-address {
   font-style: normal;
+  margin: 0;
 }
 
 .contacts-address-text {
@@ -392,6 +445,8 @@ body {
   line-height: 24px;
   font-weight: 700;
   color:#2D3440;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .contacts-phone {
@@ -402,15 +457,21 @@ body {
   color:#2D3440;
 }
 
+.contacts-schedule {
+  color: #565C66;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 32px;
+}
+
 .page-footer {
   display: flex;
-  width: 1170px;
   margin: 0 auto;
 }
 
 .footer-social {
   list-style-type: none;
-  width: 105px;
   margin-right: 300px;
 }
 
@@ -433,7 +494,6 @@ body {
 
 .copyright {
   margin-left: auto;
-  max-width: 193px;
 }
 
 .copyright-text {
