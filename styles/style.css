@@ -22,11 +22,19 @@
   font-display: swap;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100%;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -47,8 +55,8 @@ body {
   flex-grow: 1;
 }
 
-.main-container section {
-  margin-bottom: 80px;
+.page-header {
+  display: flex;
 }
 
 .navigation {
@@ -71,6 +79,7 @@ body {
 .navigation-logo {
   width: 137px;
   margin-right: 16px;
+  flex-shrink: 0;
 }
 
 .navigation-link {
@@ -122,6 +131,10 @@ body {
   line-height: 46px;
   font-weight: 900;
   text-align: center;
+}
+
+.speacial-events {
+  margin-bottom: 80px;
 }
 
 .events-list {
@@ -187,6 +200,10 @@ body {
   padding: 12px 32px;
 }
 
+.popular-tastes {
+  margin-bottom: 80px;
+}
+
 .product-list {
   list-style-type: none;
   margin: 0;
@@ -195,7 +212,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 270px);
   column-gap: 30px;
-  row-gap: 91px;
+  row-gap: 90px;
 }
 
 .product-card {
@@ -205,11 +222,11 @@ body {
   flex-direction: column;
   align-items: center;
   border-radius: 8px;
-  padding: 0;
+  padding: 0 40px 24px;
 }
 
 .product-card-image {
-  margin-top: -51px;
+  margin-top: -50px;
   margin-bottom: 16px;
   border-radius: 50%;
 }
@@ -231,10 +248,13 @@ body {
 }
 
 .product-card-price {
+  display: inline-block;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   margin-right: auto;
+  align-self: flex-start;
+  margin: 0;
 }
 
 .buy-button {
@@ -246,6 +266,7 @@ body {
   background-size: cover;
   border-radius: 16px;
   padding: 24px;
+  margin-bottom: 80px;
 }
 
 .advantages-wrapper {
@@ -273,6 +294,7 @@ body {
 
 .index-columns {
   display: flex;
+  margin-bottom: 80px;
 }
 
 .blog {
@@ -355,6 +377,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 64px 64px 64px 100px;
+  margin-bottom: 80px;
 }
 
 .delivery .section-title {
@@ -467,7 +490,8 @@ body {
 
 .page-footer {
   display: flex;
-  margin: 0 auto;
+  padding-top: 44px;
+  padding-bottom: 48px;
 }
 
 .footer-social {
