@@ -236,12 +236,11 @@ body {
 
 .product-card {
   background: #FCFCFC;
-  width: 270px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   border-radius: 8px;
   padding: 0 40px 24px;
+  align-items: center;
 }
 
 .product-card-image {
@@ -266,21 +265,24 @@ body {
   margin-bottom: 16px;
 }
 
+.price-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .product-card-price {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  margin-right: auto;
-  align-self: flex-start;
-  margin: 0;
+  margin-right: 65px;
 }
 
 .buy-button {
-  align-self: flex-end;
   min-width: 32px;
   min-height: 32px;
   background-color: #FF2F64;
   border-radius: 26px;
+  margin-bottom: auto;
 }
 
 .advantages {
