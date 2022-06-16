@@ -64,6 +64,8 @@ body {
 
 .navigation {
   display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .navigation-list {
@@ -73,7 +75,6 @@ body {
   margin: 0;
   padding: 0;
   align-items: center;
-  margin-right: 186px;
 }
 
 .navigation-user {
@@ -163,10 +164,11 @@ body {
 
 .events-item {
   background: #FF7799 no-repeat right bottom;
-  width: 550px;
   border-radius: 16px;
-  margin-right: 30px;
   padding: 36px;
+  flex-shrink: 0;
+  width: 570px;
+  margin-right: 30px;
 }
 
 .events-item:first-child {
@@ -175,9 +177,9 @@ body {
 }
 
 .events-item:last-child {
-  background-image: url("/images/marshmallow-cone.png");
-  margin-right: 0;
+  background-image: url("../images/marshmallow-cone.png");
   background-size: contain;
+  margin-right: 0;
 }
 
 .event-title {
@@ -191,7 +193,6 @@ body {
 
 .event-subtitle {
   margin: 0;
-  padding: 0;
   margin-bottom: 28px;
   max-width: 328px;
 }
@@ -214,8 +215,10 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  display: block;
   padding: 12px 32px;
   border-radius: 26px;
+  max-width: fit-content;
 }
 
 .popular-tastes {
@@ -240,16 +243,10 @@ body {
   padding: 0 40px 24px;
 }
 
-.card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .product-card-image {
-  margin-top: -50px;
-  margin-bottom: 16px;
+  margin: -50px auto 16px;
   border-radius: 50%;
+  display: block;
 }
 
 .product-card-title {
@@ -380,19 +377,10 @@ body {
   margin-bottom: 42px;
 }
 
-.newsletter-button {
+.submit-button {
   color: #FCFCFC;
   background-color: #FF2F64;
-}
-
-.contact-button {
-  color: #FCFCFC;
-  background-color: #FF2F64;
-}
-
-.delivery-button {
-  color: #FCFCFC;
-  background-color: #FF2F64;
+  margin: 0 auto;
 }
 
 .delivery {
@@ -466,8 +454,6 @@ body {
 .contacts-wrapper {
   background-color: #FCFCFC;
   border-radius: 8px;
-  display: flex;
-  flex-direction: column;
   width: 343px;
   padding: 40px;
 }
@@ -539,11 +525,6 @@ body {
 
 .footer-navigation li:first-child {
   font-weight: 700;
-}
-
-.footer-navigation-item {
-  margin: 0;
-  padding: 0;
 }
 
 .footer-navigation-link {
@@ -646,7 +627,7 @@ body {
   align-self: center;
 }
 
-.pagination-item:nth-child(3n) {
+.pagination-link-current {
   background-color: #FCFCFC;
   border-radius: 76px;
 }
