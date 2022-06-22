@@ -90,6 +90,7 @@ body {
   color: #2D3440;
   text-decoration: none;
   text-align: center;
+  min-height: 32px;
 }
 
 .navigation-item .navigation-link:not(.contacts-phone) {
@@ -114,6 +115,8 @@ body {
   line-height: 20px;
   font-weight: 700;
   text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .promo {
