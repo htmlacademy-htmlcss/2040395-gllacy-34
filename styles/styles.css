@@ -37,6 +37,7 @@ body {
   flex-direction: column;
   margin: 0;
   min-height: 100%;
+  min-width: 1366px;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -84,12 +85,15 @@ body {
 }
 
 .navigation-link {
+  position: relative;
   display: block;
   font-size: 14px;
   line-height: 20px;
   color: #2D3440;
   text-decoration: none;
   text-align: center;
+  min-height: 36px;
+  min-width: 36px;
 }
 
 .navigation-item .navigation-link:not(.contacts-phone) {
@@ -109,33 +113,98 @@ body {
   padding: 6px 16px;
 }
 
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
+}
+
 .contacts-phone {
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.promo {
+  margin-bottom: 80px;
+}
+
+.slide {
+  display: flex;
+  padding-left: 70px;
+  padding-top: 21px;
+  padding-bottom: 26px;
+}
+
+.slide-text {
+  align-self: center;
+  margin-right: 65px;
 }
 
 .slide-title {
   font-size: 36px;
   line-height: 46px;
   font-weight: 900;
+  margin: 0;
+  margin-bottom: 24px;
 }
 
 .slide-subtitle {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
+  max-width: 414px;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.main-pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -23px;
+}
+
+.slider-pagination {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.slider-pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.slider-pagination-button {
+  border-radius: 50%;
+  width: 12px;
+  min-height: 12px;
+  border: none;
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.slider-pagination-button-current {
+  background-color: rgba(252, 252, 252, 1);
 }
 
 .social {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
 }
 
-.slides-slides {
+.slider-slides {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .section-title {
@@ -145,6 +214,14 @@ body {
   line-height: 46px;
   font-weight: 900;
   text-align: center;
+}
+
+.slider-button {
+  width: 38px;
+  min-height: 38px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 26px;
+  border: 2px solid rgba(252, 252, 252, 1);
 }
 
 .speacial-events {
@@ -237,12 +314,15 @@ body {
   background: #FCFCFC;
   border-radius: 8px;
   padding: 0 40px 24px;
+  box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.1);
 }
 
 .product-card-image {
   margin: -50px auto 16px;
   border-radius: 50%;
   display: block;
+  box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.12);
+  object-fit: contain;
 }
 
 .product-card-title {
@@ -413,6 +493,7 @@ body {
   padding: 40px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
 }
 
 .order-delivery-text {
@@ -452,6 +533,7 @@ body {
   border-radius: 8px;
   width: 343px;
   padding: 40px;
+  box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
 }
 
 .contacts-title {
