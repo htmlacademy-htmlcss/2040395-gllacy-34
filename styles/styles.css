@@ -291,7 +291,7 @@ body {
   padding: 0;
   padding-top: 56px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, 270px);
   grid-auto-flow: row;
   column-gap: 30px;
   row-gap: 90px;
@@ -301,12 +301,15 @@ body {
   background: #FCFCFC;
   border-radius: 8px;
   padding: 0 40px 24px;
+  box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.1);
 }
 
 .product-card-image {
   margin: -50px auto 16px;
   border-radius: 50%;
   display: block;
+  box-shadow: 0 4px 12px 0 rgba(45, 52, 64, 0.12);
+  object-fit: contain;
 }
 
 .product-card-title {
@@ -477,6 +480,7 @@ body {
   padding: 40px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 15px 40px 0 rgba(45, 52, 64, 0.12);
 }
 
 .order-delivery-text {
@@ -516,6 +520,7 @@ body {
   border-radius: 8px;
   width: 343px;
   padding: 40px;
+  box-shadow: 0 8px 16px 0 rgba(45, 52, 64, 0.12);
 }
 
 .contacts-title {
