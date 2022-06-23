@@ -350,7 +350,7 @@ body {
   padding: 0;
   padding-top: 56px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, 270px);
   grid-auto-flow: row;
   column-gap: 30px;
   row-gap: 90px;
