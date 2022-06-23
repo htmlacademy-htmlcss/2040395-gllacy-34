@@ -123,6 +123,16 @@ body {
   fill: #000000;
 }
 
+.navigation-user .navigation-icon-left {
+  padding-left: 38px;
+}
+
+.navigation-icon-left .navigation-icon {
+  right: auto;
+  left: 17px;
+  margin: auto 0;
+}
+
 .contacts-phone {
   font-size: 16px;
   line-height: 20px;
@@ -136,11 +146,28 @@ body {
   margin-bottom: 80px;
 }
 
+.slider-inner {
+  position: relative;
+}
+
+.slider-slides {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
 .slide {
   display: flex;
+  position: relative;
   padding-left: 70px;
   padding-top: 21px;
   padding-bottom: 26px;
+}
+
+.slide:not(:first-child) {
+  opacity: 0;
+  position: absolute;
 }
 
 .slide-text {
@@ -171,6 +198,27 @@ body {
   margin-top: -23px;
 }
 
+.slider-controls {
+  position: absolute;
+  top: 258px;
+  left: 540px;
+}
+
+.slider-button {
+  width: 38px;
+  min-height: 38px;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 26px;
+  border: 2px solid rgba(252, 252, 252, 1);
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.slider-prev:not(:last-child) {
+  margin-right: 274px;
+}
+
 .slider-pagination {
   list-style-type: none;
   margin: 0;
@@ -188,6 +236,7 @@ body {
   min-height: 12px;
   border: none;
   background-color: rgba(252, 252, 252, 0.5);
+  cursor: pointer;
 }
 
 .slider-pagination-button-current {
@@ -201,10 +250,14 @@ body {
   display: flex;
 }
 
-.slider-slides {
-  list-style-type: none;
+.social-link {
+  display: block;
   margin: 0;
-  padding: 0;
+  cursor: pointer;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 16px;
 }
 
 .section-title {
@@ -216,15 +269,7 @@ body {
   text-align: center;
 }
 
-.slider-button {
-  width: 38px;
-  min-height: 38px;
-  background-color: rgba(252, 252, 252, 0.3);
-  border-radius: 26px;
-  border: 2px solid rgba(252, 252, 252, 1);
-}
-
-.speacial-events {
+.special-events {
   margin-bottom: 80px;
 }
 
@@ -292,6 +337,7 @@ body {
   padding: 12px 32px;
   border-radius: 26px;
   max-width: fit-content;
+  cursor: pointer;
 }
 
 .popular-tastes {
@@ -715,4 +761,5 @@ body {
   text-decoration: none;
   color: #2D3440;
   padding: 2px 6px;
+  cursor: pointer;
 }
