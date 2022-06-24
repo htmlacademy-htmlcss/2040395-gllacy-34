@@ -87,7 +87,7 @@ body {
 .navigation-link {
   position: relative;
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   color: #2D3440;
   text-decoration: none;
@@ -96,7 +96,7 @@ body {
   min-width: 36px;
 }
 
-.navigation-item .navigation-link:not(.contacts-phone) {
+.navigation-link:not(.contacts-phone) {
   padding: 8px 16px;
 }
 
@@ -107,6 +107,10 @@ body {
 .navigation-user .navigation-item:not(:first-child) {
   background-color: #FFCBD8;
   border-radius: 30px;
+}
+
+.navigation-user .navigation-link:not(.contacts-phone) {
+  font-size: 14px;
 }
 
 .navigation-user .navigation-link:not(:first-child) {
@@ -128,7 +132,7 @@ body {
 }
 
 .navigation-icon-left .navigation-icon {
-  right: auto;
+  margin-right: auto;
   left: 17px;
   margin: auto 0;
 }
@@ -148,6 +152,7 @@ body {
 
 .slider-inner {
   position: relative;
+  margin-bottom: -32px;
 }
 
 .slider-slides {
@@ -175,6 +180,30 @@ body {
   margin-right: 65px;
 }
 
+.slide-image-1 {
+  position: relative;
+}
+
+.slide-image-1::before {
+  position: absolute;
+  background-image: url("../images/slider-banana.png");
+  width: 100px;
+  height: 150px;
+  top: 35%;
+  right: -52%;
+  content: " ";
+}
+
+.slide-image-1::after {
+  position: absolute;
+  background-image: url("../images/slider-marshmallow.png");
+  width: 100px;
+  height: 150px;
+  top: 35%;
+  right: -98%;
+  content: " ";
+}
+
 .slide-title {
   font-size: 36px;
   line-height: 46px;
@@ -195,7 +224,6 @@ body {
 .main-pagination-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-top: -23px;
 }
 
 .slider-controls {
@@ -233,7 +261,7 @@ body {
 .slider-pagination-button {
   border-radius: 50%;
   width: 12px;
-  min-height: 12px;
+  height: 12px;
   border: none;
   background-color: rgba(252, 252, 252, 0.5);
   cursor: pointer;
@@ -338,6 +366,8 @@ body {
   border-radius: 26px;
   max-width: fit-content;
   cursor: pointer;
+  border: 4px solid rgba(252, 252, 252, 0.4);
+  background-clip: padding-box;
 }
 
 .popular-tastes {
@@ -404,6 +434,11 @@ body {
   min-height: 32px;
   background-color: #FF2F64;
   border-radius: 26px;
+  border: none;
+  position: relative;
+  background-image: url("../images/icons/cart-white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .advantages {
@@ -503,6 +538,9 @@ body {
   color: #FCFCFC;
   background-color: #FF2F64;
   margin: 0 auto;
+  border: 4px solid rgba(255, 47, 100, 0.3);
+  background-clip: padding-box;
+
 }
 
 .delivery {
@@ -606,14 +644,6 @@ body {
   color:#2D3440;
   margin: 0;
   margin-bottom: 24px;
-}
-
-.contacts-phone {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  text-decoration: none;
-  color:#2D3440;
 }
 
 .contacts-schedule {
@@ -723,6 +753,7 @@ body {
   font-weight: 700;
   background-color: #FFCBD8;
   padding: 8px 52px;
+  border: 2px solid rgba(252, 252, 252, 1);
 }
 
 .main-inner .product-list {
