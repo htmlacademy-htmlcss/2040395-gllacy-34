@@ -278,14 +278,24 @@ body {
   display: flex;
 }
 
+.social-item:not(:last-child) {
+  margin-right: 16px;
+}
+
 .social-link {
   display: block;
   margin: 0;
   cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
 }
 
-.social-item:not(:last-child) {
-  margin-right: 16px;
+.social-icon {
+  fill: #FCFCFC;
+  position: absolute;
+  width: 24px;
+  height: 24px;
 }
 
 .section-title {
@@ -378,12 +388,13 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  padding-top: 56px;
+  padding-top: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 270px);
+  grid-template-columns: repeat(4, 270px);
   grid-auto-flow: row;
   column-gap: 30px;
   row-gap: 90px;
+  align-items: baseline;
 }
 
 .product-card {
@@ -461,15 +472,78 @@ body {
   padding: 0;
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(2, 505px);
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(2, min-content);
+  grid-auto-flow: column;
   column-gap: 32px;
   row-gap: 40px;
+}
+
+.advantages-item {
+  position: relative;
+  padding-left: 64px;
+}
+
+.advantages-item:first-child::before {
+  position: absolute;
+  background-image: url("../images/icons/ice-cream.svg");
+  background-repeat: no-repeat;
+  content: " ";
+  width: 48px;
+  height: 48px;
+  background-size: 70%;
+  background-position: center;
+  border: 2px solid #2D3440;
+  border-radius: 50%;
+  left: -1px;
+}
+
+.advantages-item:nth-child(2)::before {
+  position: absolute;
+  background-image: url("../images/icons/leaf.svg");
+  background-repeat: no-repeat;
+  content: " ";
+  width: 48px;
+  height: 48px;
+  background-size: 70%;
+  background-position: center;
+  border: 2px solid #2D3440;
+  border-radius: 50%;
+  left: -1px;
+}
+
+.advantages-item:nth-child(3)::before {
+  position: absolute;
+  background-image: url("../images/icons/cow.svg");
+  background-repeat: no-repeat;
+  content: " ";
+  width: 48px;
+  height: 48px;
+  background-size: 70%;
+  background-position: center;
+  border: 2px solid #2D3440;
+  border-radius: 50%;
+  left: -1px;
+}
+
+.advantages-item:last-child::before {
+  position: absolute;
+  background-image: url("../images/icons/thermometer.svg");
+  background-repeat: no-repeat;
+  content: " ";
+  width: 48px;
+  height: 48px;
+  background-size: 70%;
+  background-position: center;
+  border: 2px solid #2D3440;
+  border-radius: 50%;
+  left: -1px;
 }
 
 .advantages-description {
   color: #565C66;
   margin: 0;
-  padding: 0;
+  display: inline-block;
 }
 
 .index-columns {
@@ -661,7 +735,6 @@ body {
 }
 
 .footer-social {
-  list-style-type: none;
   margin-right: 300px;
 }
 
