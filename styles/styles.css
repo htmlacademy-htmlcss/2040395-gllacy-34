@@ -476,7 +476,7 @@ body {
   padding: 0;
   padding-top: 50px;
   display: grid;
-  grid-template-columns: repeat(4, 270px);
+  grid-template-columns: repeat(4, 1fr);
   grid-auto-flow: row;
   column-gap: 30px;
   row-gap: 90px;
@@ -530,7 +530,7 @@ body {
   min-width: 32px;
   min-height: 32px;
   background-color: #FF2F64;
-  border-radius: 26px;
+  border-radius: 50%;
   border: none;
   position: relative;
   cursor: pointer;
@@ -540,21 +540,21 @@ body {
 .cart-button:hover {
   background-color: #FCFCFC;
   border: 2px solid #FF2F64;
-  border-radius: 26px;
+  border-radius: 50%;
   color: #000000;
 }
 
 .cart-button:active {
   background-color: #FFCBD8;
   border: 2px solid #FF2F64;
-  border-radius: 26px;
+  border-radius: 50%;
   color: #000000;
 }
 
 .cart-button:focus {
   background-color: #FF2F64;
   border: 2px solid #2D3440;
-  border-radius: 26px;
+  border-radius: 50%;
   color: #FFFFFF;
   outline: none;
 }
