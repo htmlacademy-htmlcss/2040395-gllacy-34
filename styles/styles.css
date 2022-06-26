@@ -766,10 +766,6 @@ body {
   grid-column: 1 / -1;
 }
 
-.submit-form {
-  grid-column: 1 / -1;
-}
-
 .field-group {
   display: flex;
   margin: 0;
@@ -1138,41 +1134,34 @@ body {
 }
 
 .catalog-button {
-  display: inline-block;
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
   background-color: #FDC6D4;
   padding: 8px 52px;
   border: 2px solid rgba(252, 252, 252, 1);
-  height: 36px;
+  background-clip: padding-box;
   align-self: end;
-  position: absolute;
-  right: 360px;
+  border-radius: 20px;
 }
 
 .catalog-button:hover {
   background-color: #FFFFFF;
   border: 2px solid rgba(252, 252, 252, 0.3);
-  background-clip: padding-box;
 }
 
 .catalog-button:active {
   background-color: #FFCBD8;
-  background-clip: padding-box;
 }
 
 .catalog-button:focus {
   background-color: #FFCBD8;
   border: 2px solid #2D3440;
-  background-clip: padding-box;
-  outline: none;
 }
 
 .catalog-button:disabled {
   background-color: #FEAFC3;
   border: 2px solid #FFFFFF;
-  background-clip: padding-box;
   font-weight: 400;
   color: #565C66;
 }
