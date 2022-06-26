@@ -168,7 +168,6 @@ body {
 
 .slider-inner {
   position: relative;
-  margin-bottom: -32px;
 }
 
 .slider-slides {
@@ -183,7 +182,6 @@ body {
   position: relative;
   padding-left: 70px;
   padding-top: 21px;
-  padding-bottom: 26px;
 }
 
 .slide:not(:first-child) {
@@ -308,8 +306,21 @@ body {
   cursor: pointer;
 }
 
+.slider-pagination-button:hover {
+  border: 1px solid #FCFCFC;
+}
+
+.slider-pagination-button:active {
+  background-color: #FDD5DF;
+}
+
+.slider-pagination-button:focus {
+  border: 1px solid #2D3440;
+  outline: none;
+}
+
 .slider-pagination-button-current {
-  background-color: rgba(252, 252, 252, 1);
+  background-color: #FCFCFC;
 }
 
 .social {
@@ -1013,12 +1024,8 @@ body {
 }
 
 .breadcrumbs-item {
-  margin-right: 15px;
+  margin-right: 28px;
   position: relative;
-}
-
-.breadcrumbs-item:not(:first-child) {
-  padding-left: 20px;
 }
 
 .breadcrumbs-item::after {
@@ -1026,8 +1033,8 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: 5px;
-  right: -22px;
+  top: 4px;
+  right: -20px;
   width: 12px;
   height: 12px;
   content: " ";
@@ -1041,14 +1048,13 @@ body {
   text-decoration: none;
 }
 
-.breadcrumbs-current::before {
+.breadcrumbs-item:last-child::before {
   position: absolute;
-  right: 2px;
-  bottom: 0;
-  left: 20px;
+  top: 17px;
   height: 1px;
   background-color: #2D3440;
-  content: "";
+  content: " ";
+  width: 100%;
 }
 
 .inner-header-title {
@@ -1420,6 +1426,24 @@ body {
   color: #2D3440;
   padding: 2px 7px;
   cursor: pointer;
+}
+
+.pagination-link:hover {
+  background-color: #FDD5DF;
+  border-radius: 50%;
+}
+
+.pagination-link:active {
+  background-color: #FDD5DF;
+  border-radius: 50%;
+  border: 1px solid #FCFCFC;
+}
+
+.pagination-link:focus {
+  background-color: #FDD5DF;
+  border-radius: 50%;
+  border: 1px solid #2D3440;
+  outline: none;
 }
 
 .htmlacademy-link {
