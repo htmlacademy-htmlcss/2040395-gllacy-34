@@ -10,9 +10,9 @@
 
   <body>
     <div class="page-wrapper">
-      <header class="page-header">
-        <a href="index.html" class="navigation-logo">
-          <img src="images/icons/logo-gllacy.svg" width="137" height="55" class="header-logo"
+      <header class="page-header page-header-inner">
+        <a href="index.html" class="navigation-logo-link">
+          <img class="navigation-logo" src="images/icons/logo-gllacy.svg" width="137" height="55" class="header-logo"
             alt="Логотип магазина Глэйси.">
         </a>
         <nav class="navigation">
@@ -321,13 +321,31 @@
         <div class="pagination-wrapper">
           <button class="button more-button">Показать еще</button>
 
-          <ul class="pagination">
-            <li class="pagination-item"><a href="#" class="pagination-link">1</a></li>
-            <li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
-            <li class="pagination-item"><a href="#" class="pagination-link pagination-link-current">3</a></li>
-            <li class="pagination-item"><a href="#" class="pagination-link">4</a></li>
-            <li class="pagination-item"><a href="#" class="pagination-link">5</a></li>
-          </ul>
+          <div class="pagination-controls">
+            <a class="pagination-link pagination-link-prev">
+              <span class="visually-hidden">Предыдущая страница.</span>
+            </a>
+            <ul class="pagination-list reset-list">
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link pagination-link-current" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">5</a>
+              </li>
+            </ul>
+            <a class="pagination-link pagination-link-next" href="#">
+              <span class="visually-hidden">Следующая страница.</span>
+            </a>
+          </div>
         </div>
       </main>
 
