@@ -1336,6 +1336,7 @@ body {
   background-clip: padding-box;
   align-self: flex-end;
   border-radius: 20px;
+  color:#2D3440;
 }
 
 .catalog-button:hover {
