@@ -1508,6 +1508,7 @@ body {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  color:#2D3440;
 }
 
 .select-wrapper {
