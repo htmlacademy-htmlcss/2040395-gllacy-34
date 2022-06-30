@@ -1235,13 +1235,8 @@ body {
   font-weight: 400;
   display: flex;
   flex-wrap: wrap;
-  gap: 16px 16px;
+  gap: 16px 24px;
   margin-bottom: 44px;
-}
-
-.filter-content {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .catalog-filter-group {
@@ -1250,10 +1245,6 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-}
-
-.catalog-filter-group:not(:last-child) {
-  margin-right: 24px;
 }
 
 .filter-label {
@@ -1347,6 +1338,7 @@ body {
   align-self: flex-end;
   border-radius: 20px;
   color:#2D3440;
+  margin-left: -8px;
 }
 
 .catalog-button:hover {
