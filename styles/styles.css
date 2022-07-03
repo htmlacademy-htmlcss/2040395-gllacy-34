@@ -1205,6 +1205,7 @@ body {
   margin: 0;
   display: block;
   position: relative;
+  cursor: pointer;
 }
 
 .tooltip-icon {
@@ -1481,6 +1482,10 @@ body {
   color: #2D3440;
   margin: 0;
   padding: 0;
+}
+
+.footer-navigation-link:hover {
+  opacity: 0.7;
 }
 
 .copyright {
@@ -1839,6 +1844,7 @@ body {
 
 .select-wrapper {
   position: relative;
+  width: 196px;
 }
 
 .select-wrapper::after {
