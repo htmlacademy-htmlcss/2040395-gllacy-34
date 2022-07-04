@@ -1831,7 +1831,7 @@ body {
 }
 
 .select-control {
-  max-width: fit-content;
+  min-width: 196px;
   padding: 8px 64px 8px 16px;
   padding-right: 64px;
   font: inherit;
