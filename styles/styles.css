@@ -501,14 +501,13 @@ body {
   margin-top: 115px;
 }
 
-.slide-image-1,
-.slide-image-2,
-.slide-image-3 {
-  position: relative;
-}
-
 .slide-not-show {
   display: none;
+}
+
+.slide-image {
+  position: relative;
+  align-self: flex-start;
 }
 
 .slide-image-1::before {
