@@ -801,12 +801,10 @@ body {
 
 .events-item:first-child {
   background-image: url("../images/raspberry-cone.png");
-  background-size: contain;
 }
 
 .events-item:last-child {
   background-image: url("../images/marshmallow-cone.png");
-  background-size: contain;
   margin-right: 0;
 }
 
