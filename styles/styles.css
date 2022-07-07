@@ -1183,15 +1183,6 @@ body {
   outline: none;
 }
 
-.field:invalid {
-  border: 1px solid #EA5454;
-}
-
-.field:invalid:hover {
-  border: 2px solid #EA5454;
-  padding: 11px 13px;
-}
-
 .field:disabled {
   background-color: #E7E7E7;
 }
@@ -1199,6 +1190,17 @@ body {
 .field:disabled:hover {
   background-color: #E7E7E7;
   color: #6E737A;
+}
+
+.field:not(:placeholder-shown):invalid {
+  border: 1px solid #EA5454;
+  padding: 13px 15px;
+  outline: none;
+}
+
+.field:not(:placeholder-shown):invalid:hover {
+  border: 2px solid #EA5454;
+  padding: 12px 14px;
 }
 
 .tooltip {
@@ -1702,7 +1704,7 @@ body {
 }
 
 .range {
-  padding: 18px 16px;
+  padding: 17px 16px;
   background-color: rgba(252, 252, 252, 0.3);
   border-radius: 20px;
 }
